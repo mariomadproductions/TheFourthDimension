@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- SM3DL Object Database, generated 10/09/2016 20:22:45 for The Fourth Dimension -->
+<!-- SM3DL Object Database, generated 04/12/2018 21:57:03 for The Fourth Dimension -->
 
-<database timestamp="1476037365">
+<database timestamp="1523563023">
 
 	<categories>
 		<category id="1">Uncategorized</category>
@@ -977,21 +977,21 @@
 	</object>
 
 	<object id="BeatBlock4x2x2M">
-		<name>BeatBlock4x2x2M</name>
+		<name>Beat Block (4x2x2M)</name>
 		<type></type>
 		<model>BeatBlock4x2x2M</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="BeatBlock4x2x4M">
-		<name>BeatBlock4x2x4M</name>
+		<name>Beat Block (4x2x4M)</name>
 		<type></type>
 		<model>BeatBlock4x2x4M</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -1007,11 +1007,11 @@
 	</object>
 
 	<object id="BeatBlockCurve4M">
-		<name>BeatBlockCurve4M</name>
+		<name>Beat Block (Curve, 4M)</name>
 		<type></type>
 		<model>BeatBlockCurve4M</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -1050,48 +1050,50 @@
 		<name>BeatBlockHolder</name>
 		<type></type>
 		<model></model>
-		<flags known="0" complete="0" />
-		<category id="1" />
-		<notes></notes>
+		<flags known="1" complete="0" />
+		<category id="13" />
+		<notes>This objects holds all the BeatBlocks. Use the BeatBlocks as Children for this object.</notes>
 		<files></files>
+		<field id="0" type="int" name="Tempo" values="" notes="The time, every beat plays. 30 = 1 second" />
+		<field id="2" type="list" name="Type" values="0 = Normal (W6-4), 1 = Hard (S3-5), 2 = Unused" notes="Is 2 an actual value?" />
 	</object>
 
 	<object id="BeatBlockSlope4x2M">
-		<name>BeatBlockSlope4x2M</name>
+		<name>Beat Block (Slope, 4x2M)</name>
 		<type></type>
 		<model>BeatBlockSlope4x2M</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="BeatBlockSlope4x4M">
-		<name>BeatBlockSlope4x4M</name>
+		<name>BeatBlock (Slope, 4x4M)</name>
 		<type></type>
 		<model>BeatBlockSlope4x4M</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="BeatBlockStairA">
-		<name>BeatBlockStairA</name>
+		<name>Beat Block (Stair A)</name>
 		<type></type>
 		<model>BeatBlockStairA</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="BeatBlockStairB">
-		<name>BeatBlockStairB</name>
+		<name>Beat Block (Stair B)</name>
 		<type></type>
 		<model>BeatBlockStairB</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -1150,8 +1152,8 @@
 		<name>BgmChangeArea</name>
 		<type></type>
 		<model></model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="11" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -1210,8 +1212,8 @@
 		<name>BlockAssistAssistItem</name>
 		<type></type>
 		<model>BlockAssistAssistItem</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -1220,10 +1222,11 @@
 		<name>Brick Block</name>
 		<type></type>
 		<model>BlockBrick</model>
-		<flags known="0" complete="0" />
+		<flags known="1" complete="0" />
 		<category id="10" />
-		<notes></notes>
-		<files></files>
+		<notes>A generic brick block. The dimensions of this object are 100x100x100.</notes>
+		<files>/ObjectData/BlockBrick.szs
+/ObjectData/BlockBrickBreak.szs</files>
 		<field id="3" type="int" name="Unknown" values="" notes="" />
 		<field id="4" type="int" name="Unknown" values="" notes="" />
 		<field id="5" type="int" name="Unknown" values="" notes="" />
@@ -1345,9 +1348,9 @@
 		<name>BlockBrickWithCoin</name>
 		<type></type>
 		<model>BlockBrick</model>
-		<flags known="0" complete="0" />
+		<flags known="1" complete="0" />
 		<category id="10" />
-		<notes></notes>
+		<notes>An empty brick block with a coin above. The coin will be collected, if jumping underneath the block.</notes>
 		<files></files>
 	</object>
 
@@ -1458,7 +1461,7 @@
 		<model>BlockNoteSuperWide</model>
 		<flags known="1" complete="0" />
 		<category id="3" />
-		<notes>A rainbow note block which teleports the player to another point in the level.</notes>
+		<notes>A rainbow note block which teleports the player to another point in the level. The destination coordinates is specified by the location of the child BlockNoteSuper.</notes>
 		<files>/ObjectData/BlockNoteSuperWide.szs</files>
 		<field id="3" type="int" name="Unknown" values="" notes="" />
 		<field id="4" type="int" name="Unknown" values="" notes="" />
@@ -1471,7 +1474,7 @@
 		<model>BlockNoteWide</model>
 		<flags known="1" complete="0" />
 		<category id="3" />
-		<notes>A wide note block. Functions like a trampoline.</notes>
+		<notes>A wide note block. The dimensions of this object are 200x100x200.</notes>
 		<files>/ObjectData/BlockNoteWide.szs</files>
 		<field id="3" type="int" name="Unknown" values="" notes="" />
 		<field id="4" type="int" name="Unknown" values="" notes="" />
@@ -1725,10 +1728,14 @@
 		<name>? Block (Super Leaf)</name>
 		<type></type>
 		<model>BlockQuestion</model>
-		<flags known="0" complete="0" />
+		<flags known="1" complete="0" />
 		<category id="10" />
 		<notes></notes>
 		<files></files>
+		<field id="3" type="int" name="Unknown" values="" notes="" />
+		<field id="4" type="int" name="Unknown" values="" notes="" />
+		<field id="5" type="int" name="Unknown" values="" notes="" />
+		<field id="7" type="int" name="Unknown" values="" notes="" />
 	</object>
 
 	<object id="BlockQuestionSuperStar">
@@ -1805,8 +1812,8 @@
 		<name>BlockRailTerminater</name>
 		<type></type>
 		<model>BlockRailTerminater</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -2027,13 +2034,14 @@
 	</object>
 
 	<object id="BoomerangBros">
-		<name>BoomerangBros</name>
+		<name>Boomerang Bro.</name>
 		<type></type>
 		<model>BoomerangBros</model>
 		<flags known="0" complete="0" />
 		<category id="1" />
 		<notes></notes>
 		<files></files>
+		<field id="7" type="bool" name="Has Plus Clock" values="" notes="Gives an automatically-collected Plus Clock (10) when stomped." />
 	</object>
 
 	<object id="BoomerangBrosMovePoint">
@@ -2057,13 +2065,14 @@
 	</object>
 
 	<object id="BoomerangMountainBalancePassage">
-		<name>BoomerangMountainBalancePassage</name>
+		<name>5-1/BoomerangMountain Funny-shaped Seesaw</name>
 		<type></type>
 		<model>BoomerangMountainBalancePassage</model>
 		<flags known="0" complete="0" />
 		<category id="1" />
 		<notes></notes>
 		<files></files>
+		<field id="0" type="int" name="Unknown" values="" notes="Used as 10" />
 	</object>
 
 	<object id="BoomerangMountainCloud">
@@ -2414,6 +2423,7 @@
 		<category id="7" />
 		<notes></notes>
 		<files></files>
+		<field id="0" type="int" name="Unknown" values="" notes="" />
 	</object>
 
 	<object id="Bug">
@@ -2442,7 +2452,7 @@
 		<model>Bunbun</model>
 		<flags known="1" complete="0" />
 		<category id="8" />
-		<notes>A boss which can be found in some airship levels. Requires a SwitchAppear, SwitchA and SwitchDeadOn.</notes>
+		<notes>A boss which can be found in some airship levels. Appears with cutscene when SwitchAppear is activated. If SwitchAppear is set to -1, it appears on level load. Activates SwitchA when it finishes its cutscene. This is used to cancel the effect of the PlayerControlOffArea. Activates SwitchDeadOn when killed.</notes>
 		<files>/ObjectData/Bunbun.szs
 /ObjectData/BunbunDamageTrack.szs
 /ObjectData/BunbunShell.szs
@@ -2496,18 +2506,18 @@ You have to add the bosses as child objects to this object.</notes>
 		<category id="7" />
 		<notes>This object shoots a long flame.</notes>
 		<files>/ObjectData/Burner.szs</files>
-		<field id="0" type="list" name="Delay" values="0 = permanent" notes="" />
+		<field id="0" type="list" name="Delay" values="0 = Permanent" notes="" />
 		<field id="1" type="int" name="Length" values="" notes="" />
 		<field id="2" type="int" name="Starting Time" values="" notes="" />
 	</object>
 
 	<object id="CameraArea">
-		<name>CameraArea</name>
+		<name>Camera Area</name>
 		<type></type>
 		<model></model>
-		<flags known="0" complete="0" />
-		<category id="1" />
-		<notes></notes>
+		<flags known="1" complete="1" />
+		<category id="12" />
+		<notes>An area that activates the assigned camera (CameraId).</notes>
 		<files></files>
 	</object>
 
@@ -2570,7 +2580,7 @@ You have to add the bosses as child objects to this object.</notes>
 		<category id="13" />
 		<notes>This object watches if all the child &quot;Candlestand&quot;s have been lit. Then it will activate something through SwitchA.</notes>
 		<files></files>
-		<field id="0" type="bool" name="Play Zelda SFX" values="" notes="" />
+		<field id="0" type="bool" name="Play Zelda SFX" values="1" notes="" />
 	</object>
 
 	<object id="CanyonPanelBase">
@@ -3092,7 +3102,7 @@ You have to add the bosses as child objects to this object.</notes>
 		<category id="3" />
 		<notes>A cloud that functions as a platform.</notes>
 		<files>/ObjectData/CloudLift6M.szs</files>
-		<field id="0" type="list" name="Direction" values="0=Left/Right  1=Up/Down" notes="" />
+		<field id="0" type="list" name="Direction" values="0 = Left/Right, 1 = Up/Down" notes="" />
 		<field id="1" type="int" name="Route" values="" notes="The lenght of the route, the platform moves" />
 		<field id="2" type="int" name="Unknown" values="" notes="" />
 		<field id="3" type="int" name="Unknown" values="" notes="" />
@@ -3179,7 +3189,7 @@ You have to add the bosses as child objects to this object.</notes>
 		<notes>A collectable item.</notes>
 		<files>/ObjectData/Coin.szs</files>
 		<field id="0" type="int" name="Unknown" values="" notes="" />
-		<field id="1" type="int" name="Unknown" values="" notes="" />
+		<field id="1" type="int" name="CoinGathering Time" values="" notes="The amount of time the coin appears for after being activated in a CoinGathering setup. -1 means it appears permanently." />
 		<field id="2" type="int" name="Unknown" values="" notes="" />
 		<field id="4" type="int" name="Unknown" values="" notes="" />
 	</object>
@@ -3207,7 +3217,7 @@ You have to add the bosses as child objects to this object.</notes>
 		<notes>This is the Star Medal that can be seen in various levels.</notes>
 		<files>/ObjectData/CoinCollect.szs
 /ObjectData/CoinCollectEmpty.szs</files>
-		<field id="0" type="int" name="Star Medal No." values="" notes="" />
+		<field id="0" type="list" name="Star Medal No." values="1 = One, 2 = Two, 3 = Three" notes="" />
 		<field id="1" type="int" name="Unknown" values="" notes="" />
 		<field id="2" type="int" name="Unknown" values="" notes="" />
 	</object>
@@ -3231,7 +3241,7 @@ You have to add the bosses as child objects to this object.</notes>
 		<model></model>
 		<flags known="1" complete="1" />
 		<category id="13" />
-		<notes>This object will enable its child &quot;Coin&quot;s to be activated by a switch. It will play a sound effect when all the coins have been collected. Settings such as switch and time activated are set in the Coin child objects.</notes>
+		<notes>This object will enable its child &quot;Coin&quot;s to be activated by a switch. It will play a sound effect when all the coins have been collected. Settings such as switch and time activated are set in the Coin child objects. Make sure all the child &quot;Coin&quot;s have the same &quot;SwitchAppear&quot;s.</notes>
 		<files></files>
 	</object>
 
@@ -3241,7 +3251,7 @@ You have to add the bosses as child objects to this object.</notes>
 		<model></model>
 		<flags known="1" complete="1" />
 		<category id="10" />
-		<notes>Spawns a bunch of coins when the assigned SwitchAppear is triggered.</notes>
+		<notes>Spawns a bunch of physics-affected coins when the assigned SwitchAppear is triggered.</notes>
 		<files></files>
 		<field id="0" type="int" name="No. of coins" values="" notes="" />
 	</object>
@@ -3300,7 +3310,7 @@ The direction of the item, that will be thrown out, can be configured with the d
 		<notes>A red ring that disappears when touched. To make it spawn Red Coins, give it five &quot;CoinRed&quot;s as children.</notes>
 		<files>/ObjectData/CoinRedStarter.szs</files>
 		<field id="0" type="int" name="Unknown" values="" notes="" />
-		<field id="1" type="list" name="Item" values="1 = Fireflower, 2 = Boomerangflower, All other = Superleaf (Statue Leaf, if in special world)" notes="" />
+		<field id="1" type="list" name="Item" values="1 = Fire Flower, 2 = Boomerang Flower, All other = Super Leaf (Statue Leaf, if in special world)" notes="" />
 		<field id="2" type="int" name="Unknown" values="" notes="" />
 	</object>
 
@@ -3646,10 +3656,10 @@ The direction of the item, that will be thrown out, can be configured with the d
 		<model>Dokan</model>
 		<flags known="1" complete="0" />
 		<category id="14" />
-		<notes>Stand on top of this and press L or R to warp to the child pipe object you give this.</notes>
+		<notes>Stand on top of this and press L or R to warp to the child pipe object you give this. If SwitchA is set, it will not be enterable until the switch is on. If SwitchAppear is set, it won't be there until it is made to appear out of the ground by the switch being activated.</notes>
 		<files></files>
 		<field id="6" type="int" name="Unknown" values="" notes="" />
-		<field id="7" type="int" name="L icon" values="" notes="Displays the little L icon" />
+		<field id="7" type="int" name="Show L icon" values="" notes="Displays the little &quot;L&quot; button hint" />
 	</object>
 
 	<object id="DokanOutOnly">
@@ -3658,7 +3668,7 @@ The direction of the item, that will be thrown out, can be configured with the d
 		<model>Dokan</model>
 		<flags known="0" complete="0" />
 		<category id="14" />
-		<notes></notes>
+		<notes>Stand beside this and press the Circle Pad in the appropriate direction to warp to the child pipe object you give this.</notes>
 		<files></files>
 	</object>
 
@@ -4495,9 +4505,12 @@ The direction of the item, that will be thrown out, can be configured with the d
 		<model></model>
 		<flags known="1" complete="1" />
 		<category id="13" />
-		<notes>Spawns an item depending on the assigned enemies.</notes>
+		<notes>Spawns a powerup (at the location of the last defeated enemy) when the specified number of the child enemies are defeated. The powerup spawned depends on the enemy. Possibilities:
+Fire Piranha Plant - Fire Flower
+Big Tail Goomba, Tail Boo - Super Leaf
+Boomerang Bro. - Boomerang Flower</notes>
 		<files></files>
-		<field id="0" type="int" name="No. of enemies that need to be killed" values="" notes="" />
+		<field id="0" type="int" name="No. of enemies" values="" notes="" />
 	</object>
 
 	<object id="EnemyLiftTowerGoal">
@@ -4571,7 +4584,7 @@ The direction of the item, that will be thrown out, can be configured with the d
 	</object>
 
 	<object id="FallFloor2x4">
-		<name>Shattering Stone Platform</name>
+		<name>Shatterable Stone Platform</name>
 		<type></type>
 		<model>FallFloor2x4</model>
 		<flags known="1" complete="1" />
@@ -4582,7 +4595,7 @@ The direction of the item, that will be thrown out, can be configured with the d
 	</object>
 
 	<object id="FallFloor2x6M">
-		<name>Shattering Stone Platform (Longer)</name>
+		<name>Shatterable Stone Platform (Longer)</name>
 		<type></type>
 		<model>FallFloor2x6M</model>
 		<flags known="1" complete="1" />
@@ -4770,16 +4783,18 @@ The direction of the item, that will be thrown out, can be configured with the d
 		<category id="7" />
 		<notes></notes>
 		<files></files>
+		<field id="0" type="int" name="Unknown" values="" notes="" />
+		<field id="1" type="int" name="Unknown" values="" notes="" />
 	</object>
 
 	<object id="FireFlower">
 		<name>Fire Flower</name>
 		<type></type>
 		<model>FireFlower</model>
-		<flags known="0" complete="0" />
+		<flags known="1" complete="0" />
 		<category id="10" />
 		<notes></notes>
-		<files></files>
+		<files>/ObjectData/FireFlower.szs</files>
 	</object>
 
 	<object id="FirstBase">
@@ -5567,27 +5582,27 @@ The direction of the item, that will be thrown out, can be configured with the d
 	</object>
 
 	<object id="GeneratorBox">
-		<name>GeneratorBox</name>
+		<name>! Block (Doesn't Use Child Objects)</name>
 		<type></type>
 		<model>GeneratorBox</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="GeneratorBoxHop">
-		<name>GeneratorBoxHop</name>
+		<name>! Block (Uses Child Objects)</name>
 		<type></type>
 		<model>GeneratorBoxHop</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="GeneratorBoxHopChild">
-		<name>!-Block Box</name>
+		<name>! Block - Child Object</name>
 		<type></type>
 		<model>GeneratorBoxHopChild</model>
 		<flags known="1" complete="1" />
@@ -5598,11 +5613,11 @@ The direction of the item, that will be thrown out, can be configured with the d
 	</object>
 
 	<object id="GeneratorBoxHopSmall">
-		<name>GeneratorBoxHopSmall</name>
+		<name>! Block (Uses Child Objects, Small)</name>
 		<type></type>
 		<model>GeneratorBoxHopSmall</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -5670,7 +5685,7 @@ The direction of the item, that will be thrown out, can be configured with the d
 	</object>
 
 	<object id="GoalDoor">
-		<name>Goal Door</name>
+		<name>Door (Goal / Game Over Toad House Exit)</name>
 		<type></type>
 		<model>GoalDoor</model>
 		<flags known="1" complete="1" />
@@ -5775,41 +5790,41 @@ The direction of the item, that will be thrown out, can be configured with the d
 	</object>
 
 	<object id="Grass">
-		<name>Grass</name>
+		<name>Bush</name>
 		<type></type>
 		<model>Grass</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="5" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="GrassCoin">
-		<name>GrassCoin</name>
+		<name>Bush (Coin)</name>
 		<type></type>
 		<model>Grass</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="5" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="GrassCoinx3">
-		<name>GrassCoinx3</name>
+		<name>Bush (Three Coins)</name>
 		<type></type>
 		<model>Grass</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
-		<notes></notes>
+		<flags known="1" complete="0" />
+		<category id="5" />
+		<notes>Releases a coin each time it is shaken until it has released three coins.</notes>
 		<files></files>
 	</object>
 
 	<object id="GrassKinokoOneUp">
-		<name>GrassKinokoOneUp</name>
+		<name>Bush (1-Up Mushroom)</name>
 		<type></type>
 		<model>Grass</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="5" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -5870,9 +5885,9 @@ The direction of the item, that will be thrown out, can be configured with the d
 		<model>GyroLauncher</model>
 		<flags known="1" complete="1" />
 		<category id="14" />
-		<notes>A blue cannon that can be used to reach higher places.</notes>
+		<notes>A blue cannon that can be used to reach far away places.</notes>
 		<files>/ObjectData/GyroLauncher.szs</files>
-		<field id="0" type="int" name="Time" values="" notes="" />
+		<field id="0" type="int" name="Time" values="" notes="Time for what?" />
 	</object>
 
 	<object id="HammerBros">
@@ -5881,12 +5896,12 @@ The direction of the item, that will be thrown out, can be configured with the d
 		<model>HammerBros</model>
 		<flags known="1" complete="0" />
 		<category id="7" />
-		<notes>A more or less armored Koopa Troopa that throws hammers.</notes>
+		<notes>A armored Koopa-like enemy that throws hammers. </notes>
 		<files>/ObjectData/HammerBros.szs
 /ObjectData/HammerBrosHammer.szs</files>
 		<field id="1" type="int" name="Unknown" values="" notes="" />
 		<field id="2" type="int" name="Unknown" values="" notes="" />
-		<field id="7" type="int" name="Unknown" values="" notes="" />
+		<field id="7" type="bool" name="Has Plus Clock" values="" notes="Gives an automatically-collected Plus Clock (10) when stomped." />
 	</object>
 
 	<object id="HammerBrosMovePoint">
@@ -6936,7 +6951,7 @@ The direction of the item, that will be thrown out, can be configured with the d
 		<model>KickKoura</model>
 		<flags known="1" complete="1" />
 		<category id="10" />
-		<notes>A green Koopa shell that can be kicked.</notes>
+		<notes>A green Koopa shell that can be kicked to smash into blocks and enemies. Will bounce off other shells, causing them to start moving if they are stationary.</notes>
 		<files>/ObjectData/KickKoura.szs</files>
 	</object>
 
@@ -7035,9 +7050,9 @@ The direction of the item, that will be thrown out, can be configured with the d
 		<name>KinokoOneUpMysteryBoxPresent</name>
 		<type></type>
 		<model>KinokoOneUp</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
-		<notes></notes>
+		<flags known="1" complete="0" />
+		<category id="10" />
+		<notes>Spawns a &quot;loose&quot; 1-Up Mushroom. Has an animation and effect when spawned via SwitchAppear.</notes>
 		<files></files>
 	</object>
 
@@ -7109,14 +7124,14 @@ The direction of the item, that will be thrown out, can be configured with the d
 		<model>Kinopio</model>
 		<flags known="1" complete="0" />
 		<category id="9" />
-		<notes>The iconic mushroom NPC which can be seen in many Mario games. Has a lot of different parameters, such as color changing.</notes>
+		<notes>The iconic mushroom NPC which can be seen in many Mario games. If you set a path, it will walk/run along it. However, it is unknown how the other parameters interact with this behaviour.</notes>
 		<files>/ObjectData/Kinopio.szs</files>
-		<field id="0" type="list" name="Color" values="-1 = red, 2 = blue, 3 = yellow, 4 = green, 5 = purple" notes="" />
+		<field id="0" type="list" name="Color" values="-1 = red, 2 = blue, 3 = yellow, 4 = green, 5 = purple" notes="0 is the same as -1. &gt;5 is the same as 5." />
 		<field id="1" type="bool" name="Is jumping" values="1" notes="" />
 		<field id="2" type="int" name="Unknown" values="" notes="" />
 		<field id="3" type="int" name="Unknown" values="" notes="" />
 		<field id="5" type="bool" name="Has Propeller Box" values="1" notes="" />
-		<field id="7" type="bool" name="Give 1-Up" values="1" notes="" />
+		<field id="7" type="bool" name="Give 1-Up" values="1" notes="If &gt;1, then plays animation but spawns nothing." />
 	</object>
 
 	<object id="KinopioHouseAlbum">
@@ -8338,10 +8353,10 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<model>Kuribo</model>
 		<flags known="1" complete="0" />
 		<category id="7" />
-		<notes>The iconic Goomba enemy.</notes>
+		<notes>The iconic Goomba enemy. To make it spawn a Star Medal when defeated, give it a CoinCollect (Star Medal) child. Location of CoinCollect doesn't seem relevant, but it probably needs to be loaded and nearby.</notes>
 		<files>/ObjectData/Kuribo.szs</files>
 		<field id="0" type="int" name="Unknown" values="" notes="" />
-		<field id="7" type="int" name="Unknown" values="" notes="" />
+		<field id="7" type="bool" name="Has Plus Clock" values="1" notes="Gives an automatically-collected Plus Clock (10) when stomped." />
 	</object>
 
 	<object id="KuriboTail">
@@ -8554,7 +8569,7 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<model>LiftKeyMove</model>
 		<flags known="1" complete="0" />
 		<category id="3" />
-		<notes>A yellow moving platform. Give it a children of itself to set the destination.</notes>
+		<notes>A yellow moving platform. Give it a child of itself to set the destination. If it has a value set in SwitchA, it won't move until that is activated.</notes>
 		<files></files>
 	</object>
 
@@ -8564,7 +8579,7 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<model>LiftKeyMove3x3</model>
 		<flags known="1" complete="0" />
 		<category id="3" />
-		<notes>A smaller version of the yellow moving platform. Give it a children of itself to set the destination.</notes>
+		<notes>A smaller (3x3) version of the yellow moving platform. Give it a child of itself to set the destination.</notes>
 		<files></files>
 	</object>
 
@@ -9208,11 +9223,11 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 	</object>
 
 	<object id="NeedleBlock">
-		<name>NeedleBlock</name>
+		<name>Spikey Block</name>
 		<type></type>
 		<model>NeedleBlock</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="7" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9248,13 +9263,14 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 	</object>
 
 	<object id="NeedlePlant">
-		<name>NeedlePlant</name>
+		<name>Thorny Flower</name>
 		<type></type>
 		<model>NeedlePlant</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="7" />
 		<notes></notes>
 		<files></files>
+		<field id="4" type="int" name="Unknown" values="" notes="" />
 	</object>
 
 	<object id="NeedleRoller">
@@ -9262,7 +9278,7 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<type></type>
 		<model>NeedleRoller</model>
 		<flags known="1" complete="0" />
-		<category id="5" />
+		<category id="7" />
 		<notes>A rolling spike bar. Path can be set by adding another rolling spike bar as a child object.</notes>
 		<files>/ObjectData/NeedleRoller.szs</files>
 		<field id="0" type="int" name="Unknown" values="" notes="" />
@@ -9276,7 +9292,7 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<type></type>
 		<model>NeedleRoller8M</model>
 		<flags known="1" complete="0" />
-		<category id="5" />
+		<category id="7" />
 		<notes>This is supposed to be a long rolling spike bar, however, it looks like a normal one. Path can be set by adding another rolling spike bar as a child object.</notes>
 		<files>/ObjectData/NeedleRoller.szs</files>
 		<field id="0" type="int" name="Unknown" values="" notes="" />
@@ -9286,12 +9302,12 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 	</object>
 
 	<object id="NeedleRollerFreeMove">
-		<name>NeedleRollerFreeMove</name>
+		<name>Rolling Spike Bar (Free Movement)</name>
 		<type></type>
 		<model>NeedleRollerFreeMove</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
-		<notes></notes>
+		<flags known="1" complete="0" />
+		<category id="7" />
+		<notes>Rolls based on the slope of the object it is on.</notes>
 		<files></files>
 	</object>
 
@@ -9429,8 +9445,8 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<name>NoteObjGenerator</name>
 		<type></type>
 		<model></model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes>Spawns Rainbow Notes along the specified path when SwitchA is turned on</notes>
 		<files></files>
 	</object>
@@ -9536,9 +9552,9 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<model>PackunFlowerDokan</model>
 		<flags known="1" complete="0" />
 		<category id="7" />
-		<notes>A Piranha Plant for warp pipes. It can disappear and appear.</notes>
+		<notes>A Piranha Plant for warp pipes. It can disappear and appear. If defeated, it will activate SwitchDeadOn.</notes>
 		<files>/ObjectData/PackunFlowerDokan.szs</files>
-		<field id="0" type="int" name="Unknown" values="" notes="" />
+		<field id="0" type="bool" name="Leave debris" values="1" notes="" />
 	</object>
 
 	<object id="PackunInk">
@@ -9568,11 +9584,11 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 	</object>
 
 	<object id="PataKuribo">
-		<name>PataKuribo</name>
+		<name>Paragoomba</name>
 		<type></type>
 		<model>PataKuribo</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="7" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9683,57 +9699,58 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<type></type>
 		<model>PeraDokan</model>
 		<flags known="1" complete="0" />
-		<category id="1" />
-		<notes></notes>
+		<category id="10" />
+		<notes>If a SwitchA is specified, it will activate the switch when it is broken.</notes>
 		<files></files>
 	</object>
 
 	<object id="PeraKinokoOneUp">
-		<name>PeraKinokoOneUp</name>
+		<name>Cardboard 1-Up Mushroom</name>
 		<type></type>
 		<model>PeraKinokoOneUp</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="PeraKuribo">
-		<name>PeraKuribo</name>
+		<name>Cardboard Goomba</name>
 		<type></type>
 		<model>PeraKuribo</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes></notes>
 		<files></files>
+		<field id="0" type="bool" name="Contains Coin" values="" notes="" />
 	</object>
 
 	<object id="PeraPeach">
-		<name>PeraPeach</name>
+		<name>Cardboard Peach</name>
 		<type></type>
 		<model>PeraPeach</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="PeraPeachBreak">
-		<name>PeraPeachBreak</name>
+		<name>Cardboard Peach (Broken)</name>
 		<type></type>
 		<model>PeraPeachBreak</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="PhotoAlbum">
-		<name>PhotoAlbum</name>
+		<name>Photo Album</name>
 		<type></type>
 		<model>PhotoAlbum</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="14" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9742,8 +9759,8 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<name>Picket</name>
 		<type></type>
 		<model>Picket</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9752,8 +9769,8 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<name>PicketCoin</name>
 		<type></type>
 		<model>Picket</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9762,8 +9779,8 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<name>PicketCoin3</name>
 		<type></type>
 		<model>Picket</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9772,8 +9789,8 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<name>PicketSuperLeaf</name>
 		<type></type>
 		<model>Picket</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9782,8 +9799,8 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<name>Plant</name>
 		<type></type>
 		<model>Plant</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9792,8 +9809,8 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<name>PlantOneUp</name>
 		<type></type>
 		<model>Plant</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="5" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9813,7 +9830,7 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<type></type>
 		<model></model>
 		<flags known="0" complete="0" />
-		<category id="1" />
+		<category id="11" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9834,7 +9851,7 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<type></type>
 		<model></model>
 		<flags known="0" complete="0" />
-		<category id="1" />
+		<category id="11" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9844,7 +9861,7 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<type></type>
 		<model></model>
 		<flags known="0" complete="0" />
-		<category id="1" />
+		<category id="11" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9854,7 +9871,7 @@ arg[1] = speed, if &amp;gt; 0 it goes counterclockwise&lt;/ShortDescription&gt;&
 		<type></type>
 		<model></model>
 		<flags known="0" complete="0" />
-		<category id="1" />
+		<category id="11" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9875,7 +9892,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<type></type>
 		<model>PoleCap</model>
 		<flags known="0" complete="0" />
-		<category id="1" />
+		<category id="3" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -9914,7 +9931,7 @@ The length can be changed with the Y-scale setting.</notes>
 /ObjectData/PeachRope.szs
 /ObjectData/PoleGoalBall.szs
 /ObjectData/PoleGoalLast.szs</files>
-		<field id="0" type="bool" name="Play SMB Theme" values="0" notes="" />
+		<field id="0" type="bool" name="Play SMB Theme" values="1" notes="" />
 		<field id="1" type="int" name="Unknown" values="" notes="" />
 		<field id="2" type="int" name="Unknown" values="" notes="" />
 	</object>
@@ -9928,7 +9945,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<notes>A goal pole for Bowser's Castle.</notes>
 		<files>/ObjectData/PoleGoalBall.szs
 /ObjectData/PoleGoalSuper.szs</files>
-		<field id="0" type="bool" name="Play SMB Theme" values="0" notes="" />
+		<field id="0" type="bool" name="Play SMB Theme" values="1" notes="" />
 		<field id="1" type="int" name="Unknown" values="" notes="" />
 		<field id="2" type="int" name="Unknown" values="" notes="" />
 	</object>
@@ -10060,7 +10077,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<type></type>
 		<model></model>
 		<flags known="0" complete="0" />
-		<category id="1" />
+		<category id="11" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -10158,7 +10175,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<type></type>
 		<model>Punpun</model>
 		<flags known="0" complete="0" />
-		<category id="1" />
+		<category id="8" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -10188,7 +10205,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<type></type>
 		<model>Punpun</model>
 		<flags known="0" complete="0" />
-		<category id="1" />
+		<category id="8" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -11054,7 +11071,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<model>SkyEndRoll</model>
 		<flags known="1" complete="1" />
 		<category id="4" />
-		<notes>This object is half-unused. The model can be seen during the credits, but it is loaded through other means.</notes>
+		<notes>This object is half-unused. The model can be seen during the credits, but it isn't loaded by being placed in the level file.</notes>
 		<files>/ObjectData/SkyEndRoll.szs</files>
 	</object>
 
@@ -11422,8 +11439,8 @@ The length can be changed with the Y-scale setting.</notes>
 		<name>SkyScrollBlack</name>
 		<type></type>
 		<model>SkyScrollBlack</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="5" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -11432,8 +11449,8 @@ The length can be changed with the Y-scale setting.</notes>
 		<name>SkyScrollDay</name>
 		<type></type>
 		<model>SkyScrollDay</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="4" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -11442,8 +11459,8 @@ The length can be changed with the Y-scale setting.</notes>
 		<name>SkyScrollEvening</name>
 		<type></type>
 		<model>SkyScrollEvening</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="4" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -11462,8 +11479,8 @@ The length can be changed with the Y-scale setting.</notes>
 		<name>SkyTwoColor</name>
 		<type></type>
 		<model>SkyTwoColor</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="4" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -11472,8 +11489,8 @@ The length can be changed with the Y-scale setting.</notes>
 		<name>SkyValley</name>
 		<type></type>
 		<model>SkyValley</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="4" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -11544,7 +11561,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<model>Sokuten</model>
 		<flags known="1" complete="0" />
 		<category id="7" />
-		<notes>A smaller version of a Bramball, which can be found in the many NSMB games. It moves by flipping itself around, which sometimes reveals a spot that Mario can hit.</notes>
+		<notes>A version of the Flophopper from SMG2. It moves by flipping itself around, which sometimes reveals a spot that Mario can hit.</notes>
 		<files>/ObjectData/Sokuten.szs</files>
 		<field id="1" type="int" name="Distance" values="" notes="" />
 		<field id="8" type="int" name="Unknown" values="" notes="" />
@@ -11602,7 +11619,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<model></model>
 		<flags known="1" complete="0" />
 		<category id="11" />
-		<notes>An area that, when entered, draws a circle around the player.</notes>
+		<notes>An area that, when entered, draws a circle in front of the camera that focuses on the player. The rest of the screen is darkened.</notes>
 		<files></files>
 		<field id="0" type="int" name="Unknown" values="" notes="" />
 		<field id="1" type="int" name="Unknown" values="" notes="" />
@@ -11746,7 +11763,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<type></type>
 		<model></model>
 		<flags known="0" complete="0" />
-		<category id="1" />
+		<category id="16" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -11766,7 +11783,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<type></type>
 		<model></model>
 		<flags known="0" complete="0" />
-		<category id="1" />
+		<category id="11" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -12505,7 +12522,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<model></model>
 		<flags known="1" complete="0" />
 		<category id="11" />
-		<notes>Turns on a switch through SwitchA whenever the player enters this area.</notes>
+		<notes>Turns on a switch through SwitchA whenever the player enters this area. Nintendo uses small areas inside ? Blocks to detect when they are hit.</notes>
 		<files></files>
 		<field id="0" type="int" name="Unknown" values="" notes="" />
 	</object>
@@ -12573,12 +12590,12 @@ The length can be changed with the Y-scale setting.</notes>
 	</object>
 
 	<object id="Teresa">
-		<name>Teresa</name>
+		<name>Boo</name>
 		<type></type>
 		<model>Teresa</model>
 		<flags known="0" complete="0" />
 		<category id="1" />
-		<notes></notes>
+		<notes>If it has SwitchA set, it won't appear until it is activated. When it is activated it will appear with an "flourish".</notes>
 		<files></files>
 	</object>
 
@@ -12635,21 +12652,21 @@ The length can be changed with the Y-scale setting.</notes>
 	</object>
 
 	<object id="TimerClock10">
-		<name>TimerClock10</name>
+		<name>Plus Clock (10)</name>
 		<type></type>
 		<model>TimerClockSmall</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="9" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="TimerClock100">
-		<name>TimerClock100</name>
+		<name>Plus Clock (100)</name>
 		<type></type>
 		<model>TimerClock</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="10" />
 		<notes></notes>
 		<files></files>
 	</object>
@@ -12884,11 +12901,11 @@ The length can be changed with the Y-scale setting.</notes>
 		<model>TreeA</model>
 		<flags known="1" complete="0" />
 		<category id="5" />
-		<notes>A climbable tree that can be found in various levels. Can spawn items.</notes>
+		<notes>A bubbly climbable tree that can be found in various levels. Can spawn items.</notes>
 		<files>/ObjectData/TreeA.szs</files>
 		<field id="0" type="list" name="Item" values="-1 = nothing, 1 = 1-Up Mushroom, 2 = Fire Flower, 3 = Super Leaf, 4 = Super Star, 5 = Poison Mushroom, 6 = Boomerang Flower" notes="2, 3 and 6 are dependant on Mario's size" />
 		<field id="1" type="int" name="Unknown" values="" notes="" />
-		<field id="2" type="bool" name="Drop coins if hit" values="1" notes="" />
+		<field id="2" type="bool" name="Drop coins if hit" values="1" notes="Drops coins if rolled into." />
 	</object>
 
 	<object id="TrickHintPanel">
@@ -13504,7 +13521,7 @@ The length can be changed with the Y-scale setting.</notes>
 		<category id="3" />
 		<notes>A purple block with an arrow sign on it. Moves to the direction it is rotated to.</notes>
 		<files>/ObjectData/UpperBlock.szs</files>
-		<field id="3" type="bool" name="Is snowy?" values="" notes="" />
+		<field id="3" type="bool" name="Snowy" values="1" notes="" />
 		<field id="4" type="int" name="Distance" values="" notes="" />
 		<field id="5" type="int" name="Unknown" values="" notes="" />
 	</object>
@@ -13942,41 +13959,41 @@ The length can be changed with the Y-scale setting.</notes>
 		<name>Warp Box</name>
 		<type></type>
 		<model>WarpCube</model>
-		<flags known="0" complete="0" />
-		<category id="1" />
-		<notes>Warps the player to another point in the stage.
-add a WarpCubeOutOnly object in the GenerateChildren property</notes>
+		<flags known="1" complete="0" />
+		<category id="14" />
+		<notes>Warps the player to another point in the stage. Add a WarpCube* object in the GenerateChildren property to specify the destination Warp Box.</notes>
 		<files></files>
 	</object>
 
 	<object id="WarpCubeOnce">
-		<name>WarpBoxOnce</name>
+		<name>Warp Cube (In Once Only)</name>
 		<type></type>
 		<model></model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="14" />
 		<notes>Like WarpBox, but disappears after use.</notes>
 		<files></files>
 	</object>
 
 	<object id="WarpCubeOutOnly">
-		<name>WarpCubeOutOnly</name>
+		<name>Warp Cube (Out Once Only)</name>
 		<type></type>
 		<model></model>
-		<flags known="0" complete="0" />
-		<category id="1" />
+		<flags known="1" complete="0" />
+		<category id="14" />
 		<notes></notes>
 		<files></files>
 	</object>
 
 	<object id="WarpDoor">
-		<name>Warp Door</name>
+		<name>Door</name>
 		<type></type>
 		<model>WarpDoor</model>
 		<flags known="1" complete="0" />
 		<category id="1" />
-		<notes></notes>
+		<notes>A door used in various levels.</notes>
 		<files></files>
+		<field id="0" type="list" name="Unknown" values="0 = Normal, 1 = Disappears when exited from." notes="" />
 	</object>
 
 	<object id="WarpDoorKinopio">
@@ -14015,8 +14032,10 @@ add a WarpCubeOutOnly object in the GenerateChildren property</notes>
 		<model>WarpPorter</model>
 		<flags known="1" complete="0" />
 		<category id="14" />
-		<notes>A purple warp box that teleports the player to another point in a level. Add another WarpPorter as a children, that will spawn the player. It teleports the player back to the original position after 10 seconds.</notes>
+		<notes>A purple warp box that teleports the player to another point in a level. Add another WarpPorter as a children, that will spawn the player. It teleports the player back to the original position, when the time is over.
+Standard time limit is 10 seconds. It can be changed in Arg0 (unused).</notes>
 		<files>/ObjectData/WarpPorter.szs</files>
+		<field id="0" type="int" name="Time limit" values="" notes="30 = 1 second. Unused." />
 		<field id="1" type="int" name="Unknown" values="" notes="" />
 	</object>
 
@@ -14026,7 +14045,7 @@ add a WarpCubeOutOnly object in the GenerateChildren property</notes>
 		<model>WarpPorter</model>
 		<flags known="1" complete="0" />
 		<category id="14" />
-		<notes>An unused alterate version of the  urple warp box that teleports the player to another point in a level. Add another WarpPorter as a children, that will spawn the player. It teleports the player back to the original position after 10 seconds.</notes>
+		<notes>An unused alterate version of the Purple warp box that teleports the player to another point in a level. Add another WarpPorter as a children, that will spawn the player. It teleports the player back to the original position after 10 seconds.</notes>
 		<files>/ObjectData/WarpPorter.szs</files>
 		<field id="1" type="int" name="Unknown" values="" notes="" />
 	</object>
@@ -14103,6 +14122,9 @@ add a WarpCubeOutOnly object in the GenerateChildren property</notes>
 		<category id="10" />
 		<notes></notes>
 		<files></files>
+		<field id="0" type="bool" name="Doesn't Leave Debris" values="1" notes="" />
+		<field id="5" type="int" name="Unknown" values="" notes="" />
+		<field id="7" type="int" name="Unknown" values="" notes="" />
 	</object>
 
 	<object id="WoodBoxBoomerangFlower">
